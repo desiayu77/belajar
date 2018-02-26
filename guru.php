@@ -1,7 +1,7 @@
 <html>
 <input type="text" name="id_guru" value="id">
 <br>
-<input type="text" name="nip" value="Nomoi Induk guru">
+<input type="text" name="nip" value="Nomor Induk guru">
 <br>
 <input type="text" name="nama_guru" value="Nama guru">
 <br>
