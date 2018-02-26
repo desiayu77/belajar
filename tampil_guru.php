@@ -1,8 +1,8 @@
-			<?php
+<?php
 include 'koneksi.php';
 $id_guru = $_POST['id_guru'];
-$nis = $_POST['nis'];
-$guru = $_POST['guru'];
+$nip = $_POST['nip'];
+$mapel = $_POST['mapel'];
 $nama_guru = $_POST['nama_guru'];
 $alamat = $_POST['alamat'];
 
@@ -18,7 +18,7 @@ echo "<table border='1' class='data'>
 		
 
 
- $q = "insert into guru (id_guru, nis, guru, nama, alamat)values ('$id_guru','$nip','$guru','$nama','$alamat')";
+ $q = "insert into guru (id_guru, nip, nama, mapel, alamat)values ('$id_guru','$nip','$guru','$nama','$alamat')";
         //echo $q;
         mysql_query($q);
         if(!$q)
