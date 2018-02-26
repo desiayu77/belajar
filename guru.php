@@ -27,6 +27,7 @@
             <option value="6">6</option>
             </select>
 <br>
+<input type="text" name="nama_guru" value="Nama guru">
  <input type="submit" name="submit">
 
 </html>
@@ -35,13 +36,14 @@
 include 'koneksi.php';
 $id_guru = $_POST['id_guru'];
 $nip = $_POST['nip'];
-$kelas = $_POST['kelas'];
+
 $nama_guru = $_POST['nama_guru'];
+            $mapel = $_POST['mapel'];
 $alamat = $_POST['alamat'];
 
 
 
- $q = "insert into guru (id_guru, nim, kelas, nama, alamat)values ('$id_guru','$nip','$kelas','$nama','$alamat')";
+ $q = "insert into guru (id_guru, nip, nama, mapel, alamat)values ('$id_guru','$nip',$nama','$mapel','$alamat')";
         //echo $q;
         mysql_query($q);
         echo "Data sudah tersimpan";
