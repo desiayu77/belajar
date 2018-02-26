@@ -2,7 +2,7 @@
 include 'koneksi.php';
 $id_siswa = $_POST['id_siswa'];
 $nis = $_POST['nis'];
-$siswa = $_POST['siswa'];
+$kelas = $_POST['kelas'];
 $nama_siswa = $_POST['nama_siswa'];
 $alamat = $_POST['alamat'];
 
@@ -18,7 +18,7 @@ echo "<table border='1' class='data'>
 		
 
 
- $q = "insert into siswa (id_siswa, nis, siswa, nama, alamat)values ('$id_siswa','$nis','$siswa','$nama','$alamat')";
+ $q = "insert into siswa (id_siswa, nis, kelas, nama, alamat)values ('$id_siswa','$nis','$kelas','$nama','$alamat')";
         //echo $q;
         mysql_query($q);
         if(!$q)
