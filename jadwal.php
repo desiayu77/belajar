@@ -1,6 +1,6 @@
   
 <html>
-<form action="simpan_jadwal.php">
+<form action="tampil_jadwal.php" method="post">
 <table border="1">
 <tr>
     <td> id Jadwal</td>

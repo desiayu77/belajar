@@ -1,4 +1,5 @@
 <html>
+<form action="tampil_guru.php" method="post">
 <input type="text" name="id_guru" value="id">
 <br>
 <input type="text" name="nip" value="Nomor Induk guru">

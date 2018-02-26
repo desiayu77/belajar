@@ -1,5 +1,5 @@
 <html>
-<form action="simpan_siswa.php">
+<form action="tampil_siswa.php" method="post">
 <table border="1">
 <tr>
 <td>id Siswa</td>
